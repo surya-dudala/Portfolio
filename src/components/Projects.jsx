@@ -42,13 +42,25 @@ const Projects = () => {
                 <div className="p-8 relative z-10 flex flex-col flex-1">
                   <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">{project.title}</h3>
                   <p className="text-slate-400 mb-6 text-sm leading-relaxed flex-1">{project.description}</p>
-                  <div className="flex justify-between items-center mt-auto">
-                    <div className="flex flex-wrap gap-2">
+                  <div className="flex justify-between items-center mt-auto gap-4">
+                    <div className="flex flex-wrap gap-2 flex-1">
                       {project.stack.map(tech => (
-                        <span key={tech} className="text-xs font-medium px-2.5 py-1 bg-blue-900/30 text-blue-400 rounded border border-blue-500/20 shadow-sm">
+                        <span key={tech} className="text-xs font-medium px-2.5 py-1 bg-blue-900/30 text-blue-400 rounded border border-blue-500/20 shadow-sm whitespace-nowrap">
                           {tech}
                         </span>
                       ))}
+                    </div>
+                    <div className="flex gap-3 shrink-0">
+                      {project.github && project.github !== "#" && (
+                         <a href={project.github} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-[#060a13] border border-slate-700/50 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:-translate-y-1 transition-all" title="View Source Code">
+                           <FaGithub size={18} />
+                         </a>
+                      )}
+                      {project.liveDemo && project.liveDemo !== "#" && (
+                         <a href={project.liveDemo} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-[#060a13] border border-slate-700/50 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:-translate-y-1 transition-all" title="Live Demo">
+                           <FaExternalLinkAlt size={16} />
+                         </a>
+                      )}
                     </div>
                   </div>
                 </div>
