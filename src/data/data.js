@@ -110,7 +110,7 @@ export const projects = [
   {
     id: 1,
     title: "LifeOS – Personal Analytics Dashboard",
-    image: "assets/project1.png",
+    image: "/assets/project1.png",
     stack: ["React", "Node.js", "CSS", "JavaScript"],
     description:
       "Unified system to simplify daily planning and track activities with secure sessions and meaningful graphical insights.",
