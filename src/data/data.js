@@ -114,7 +114,7 @@ export const projects = [
     stack: ["React", "Node.js", "CSS", "JavaScript"],
     description:
       "Unified system to simplify daily planning and track activities with secure sessions and meaningful graphical insights.",
-    github: "https://github.com/surya-dudala",
+    github: "https://github.com/surya-dudala/LifeOS-mern",
     liveDemo: "https://life-os-mern.vercel.app",
     category: "Full Stack"
   },
@@ -125,7 +125,7 @@ export const projects = [
     stack: ["React", "Node.js", "Tailwind CSS"],
     description:
       "Web-based fitness platform with authentication, role-based access, and real-time workout tracking.",
-    github: "https://github.com/surya-dudala",
+    github: "https://github.com/surya-dudala/TrainX",
     liveDemo: "https://virtual-personal-trainer.vercel.app/dashboard",
     category: "Full Stack"
   },
@@ -136,7 +136,7 @@ export const projects = [
     stack: ["PHP", "JavaScript", "MySQL", "Tailwind"],
     description:
       "Full-stack hiring system with onboarding forms, backend logic, and interactive dashboard.",
-    github: "https://github.com/surya-dudala",
+    github: "https://github.com/surya-dudala/Creating-a-seamless-agent-hiring-experience-with-technology",
     liveDemo: "#",
     category: "Full Stack"
   }
